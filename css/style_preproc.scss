@@ -1,0 +1,610 @@
+@import "bootstrap.min.css";
+@import "bootstrap-theme.css";
+@import "https://fonts.googleapis.com/css?family=Asap:400,500,700&display=swap";
+@import "../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css";
+@import "owl.carousel.min.css";
+@import "owl.theme.default.min.css";
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+header{
+  background-color:#e2e2e2 ;
+  max-width: 100%;
+  padding: 20px 90px 0;
+}
+nav.navbar.navbar-default{
+  background-image: none;
+  border-radius:0;
+  box-shadow: none;
+  background-color: transparent;
+ border-color: transparent;
+
+}
+a.navbar-brand{
+  width: 110px;
+  height: 80px;
+  @include max-screen(375px){
+  padding: 10px 20px;
+}
+  @include max-screen(320px){
+  width: 75px;
+}}
+img{
+  max-width: 100%;
+}
+nav li{
+  text-transform: uppercase;
+  font-family: 'Asap';
+  //font-style: normal;
+  //font-weight: 400;
+  color: #4d4d4d;
+  font-size: 16px;
+}
+h1{
+  font-family: 'Asap';
+  //font-style: normal;
+  //font-weight: 500;
+  color: #4d4d4d;
+  font-size: 90px;
+  margin-top: 60px;
+  @include max-screen(767px){
+    font-size: 50px;
+    margin-top: 20px;
+  }
+  @include max-screen(375px){
+    font-size: 35px;
+    margin-top: 10px;
+  }
+}
+p{
+  font-family: 'Asap';
+  font-style: normal;
+  font-weight: 500;
+  color: #9b9b9b;
+  font-size: 22px;
+  padding-bottom: 30px;
+  margin: 0;
+  @include max-screen(375px){
+    font-size: 11px;
+    padding-bottom: 10px;
+  }
+}
+a.bttn1{
+  display: inline-block;
+  background-color: white;
+  font-family: 'Asap';
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  font-size: 16px;
+  color:#4d4d4d;
+  margin-right: 20px;
+  text-decoration: none;
+  @include max-screen(375px){
+    font-size: 10px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+  }
+  @include max-screen(320px){
+
+    font-size: 8px;
+    margin-bottom: 10px;
+    padding: 8px 19px;
+  }
+  }
+
+
+a.bttn2{
+  display: inline-block;
+  background-color: transparent;
+  font-family: 'Asap';
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 14px 45px;
+  font-size: 16px;
+  color:#4d4d4d;
+  border: solid 1px #0f0f0f;
+  text-align: center;
+  text-decoration: none;
+  @include max-screen(375px) {
+    font-size: 10px;
+    padding: 10px 25px;}
+    @include max-screen(320px) {
+
+        font-size: 8px;
+        padding: 8px 27px;     }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section.about{
+  background-color: white;
+  max-width: 100%;
+  padding: 20px 90px 0;
+}
+h3.text{
+  text-transform: uppercase;
+  font-size: 46px;
+  font-family: 'Asap', sans-serif;
+  font-weight: 700;
+  color: #9b9b9b;
+  line-height: 45px;
+  padding-top: 160px;
+padding-right: 240px;
+  @include max-screen(767px){
+    padding: 0;
+    font-size: 35px;
+  }
+  @include max-screen(375px){
+
+    font-size: 20px;
+  padding:0;
+    line-height: 1;
+  }
+}
+  h3.text:before{
+    content: "";
+    display: block;
+    margin-bottom: 20px;
+    width: 60px;
+    height: 2px;
+    background-color:#9b9b9b;
+  }
+
+p.text{
+  font-size: 16px;
+  font-family: 'Asap', sans-serif;
+  font-weight: 400;
+  color: #9b9b9b;
+  line-height: 20px;
+  padding-right: 85px;
+  padding-bottom: 35px;
+  @include max-screen(375px){
+    font-size: 10px;
+    line-height: 1;
+    padding: 0 0 15px;
+
+  }
+}
+.text a.btn.btn-default{
+  border-radius: 0;
+  background-color: white;
+  font-family: 'Asap';
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 15px 45px;
+  color:#4d4d4d ;
+  @include max-screen(375px){
+    padding: 7px 20px;
+    font-size: 10px;
+  }
+}
+.big{
+  margin: 80px 0 125px;
+
+  @include max-screen(767px){
+    margin: 20px 0;
+  }
+}
+
+
+section.services{
+  background-color: #f6f6f6;
+  max-width: 100%;
+  padding-bottom: 90px;
+  @include max-screen(375px){
+    padding-bottom: 0;
+  }
+
+}
+section.services h3{
+  text-transform: uppercase;
+  font-size: 46px;
+  font-family: 'Asap', sans-serif;
+  font-weight: 700;
+  color: #9b9b9b;
+  line-height: 1px;
+  padding: 95px 0 40px;
+ text-align: center;
+    @include max-screen(767px){
+    padding: 30px 0 30px;
+    font-size: 35px;
+  }
+  @include max-screen(375px){
+    font-size: 20px;
+    padding:0;
+
+  }
+}
+.services h3:before{
+  content: "";
+  display: block;
+ margin: auto;
+  width: 60px;
+  height: 2px;
+  background-color:#9b9b9b;
+  margin-bottom: 50px;
+  @include max-screen(375px){
+    margin-bottom: 20px;
+
+  }
+
+}
+
+.servis{
+  padding-left: 87px;
+  padding-bottom: 50px;
+  @include max-screen(767px){
+  padding-left: 268px;
+    padding-bottom: 0;
+  }
+  @include max-screen(375px){
+    padding-left: 76px;
+    padding-bottom: 0;
+  }
+  @include max-screen(360px){
+  padding-left: 64px;
+}
+  @include max-screen(320px){
+    padding-left: 42px;
+  }
+}
+
+section.skills{
+  background-color: white;
+  max-width: 100%;
+  padding-bottom: 0px;
+  @include max-screen(375px){
+    padding-bottom: 0;
+  }
+}
+
+section.skills h3{
+  text-transform: uppercase;
+  font-size: 46px;
+  font-family: 'Asap', sans-serif;
+  font-weight: 700;
+  color: #9b9b9b;
+  line-height: 1px;
+  padding: 95px 0 60px;
+  text-align: center;
+  @include max-screen(767px){
+    padding: 30px 0 30px;
+    font-size: 35px;
+  }
+  @include max-screen(375px){
+    font-size: 20px;
+    padding:0;
+
+  }
+}
+.skills h3:before{
+  content: "";
+  display: block;
+  margin: auto;
+  width: 60px;
+  height: 2px;
+  background-color:#9b9b9b;
+  margin-bottom: 50px;
+  @include max-screen(375px){
+    margin-bottom: 20px;
+  }
+
+}
+.graphs img {
+padding-left: 60px;
+  @include max-screen(375px){
+    padding-left: 10px;
+
+  }
+
+}
+section.portfolio{
+  background-color: #f6f6f6;
+  max-width: 100%;
+  padding-bottom: 110px;
+  @include max-screen(767px){
+    padding-bottom: 15px;
+  }
+}
+section.portfolio h3{
+  text-transform: uppercase;
+  font-size: 46px;
+  font-family: 'Asap', sans-serif;
+  font-weight: 700;
+  color: #9b9b9b;
+  line-height: 1px;
+  padding: 95px 0 60px;
+  text-align: center;
+
+
+  @include max-screen(767px){
+    padding: 30px 0 30px;
+    font-size: 35px;
+  }
+  @include max-screen(375px){
+    font-size: 20px;
+    padding:0;
+
+  }
+}
+.portfolio h3:before{
+  content: "";
+  display: block;
+  margin: auto;
+  width: 60px;
+  height: 2px;
+  background-color:#9b9b9b;
+  margin-bottom: 50px;
+  @include max-screen(375px){
+    margin-bottom: 20px;
+  }
+
+}
+.block-portfolio a.btn.btn-default{
+  border-radius: 0;
+  background-color: white;
+  font-family: 'Asap';
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 15px 45px;
+  color:#4d4d4d ;
+  margin-left: 525px;
+  @include max-screen(767px){
+    margin-left: 305px;
+  }
+  @include max-screen(375px){
+    padding: 7px 20px;
+    font-size: 10px;
+    margin-left: 130px;
+  }
+  @include max-screen(375px){
+    margin-left: 110px;
+  }
+
+}
+
+.port{
+  padding-left: 87px;
+  padding-bottom: 50px;
+  @include max-screen(767px){
+    padding-left: 208px;
+    padding-bottom: 15px;
+  }
+  @include max-screen(375px){
+    padding-left: 18px;
+    padding-bottom: 10px;
+  }
+  @include max-screen(360px){
+    padding-left: 18px;
+  }
+
+}
+section.testimonials{
+  background-color: white;
+  max-width: 100%;
+  padding-bottom: 150px;
+  @include max-screen(767px){
+    padding-bottom: 15px;
+  }
+}
+section.testimonials h3{
+  text-transform: uppercase;
+  font-size: 46px;
+  font-family: 'Asap', sans-serif;
+  font-weight: 700;
+  color: #9b9b9b;
+  line-height: 1px;
+  padding: 95px 0 130px;
+  text-align: center;
+
+
+  @include max-screen(767px){
+    padding: 30px 0 30px;
+    font-size: 35px;
+  }
+  @include max-screen(375px){
+    font-size: 20px;
+    padding:20px 0;
+
+  }
+}
+.testimonials h3:before {
+  content: "";
+  display: block;
+  margin: auto;
+  width: 60px;
+  height: 2px;
+  background-color: #9b9b9b;
+  margin-bottom: 50px;
+  @include max-screen(375px) {
+    margin-bottom: 20px;
+  }
+}
+
+p.klient{
+  font-size: 30px;
+  font-family: 'Asap', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #4d4d4d;
+  padding-bottom: 0;
+  line-height: 1;
+  @include max-screen(375px){
+    font-size: 20px;
+    margin-top: 20px;
+  }
+}
+p.position{
+  font-size: 12px;
+  font-family: 'Asap', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #4d4d4d;
+  padding-bottom: 20px;
+}
+
+p.description{
+  font-size: 16px;
+  font-family: 'Asap', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #9b9b9b;
+  padding-bottom: 20 px;
+  max-width:575px ;
+  line-height: 20px;
+}
+.block1{
+  border: solid 2px ;
+  color: #9b9b9b ;
+  padding: 80px 30px 100px 110px;
+  margin-bottom: 110px;
+  @include max-screen(375px){
+    padding: 20px 24px 27px;}
+    @include max-screen(360px){
+      border: none;
+    }
+}
+
+.info{
+background-color:#f6f6f6 ;
+  padding: 45px 140px 65px;
+}
+.port-1{
+@include max-screen(767px){
+  padding: 0px 20px 15px 137px;
+
+}
+}
+
+.block{
+  background-image: url('../images/contact-bg-footer.png');
+  background-size: cover;
+  padding-top: 140px;
+  @include max-screen(767px){
+    padding-top: 0px;
+  }
+}
+h3.footer-block{
+  text-transform: uppercase;
+  font-size: 46px;
+  font-family: 'Asap', sans-serif;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 60px;
+@include max-screen(767px){
+   padding: 30px 0 30px;
+   font-size: 35px;
+  margin-bottom: 15px;
+ }
+@include max-screen(375px){
+  font-size: 20px;
+  padding:0;
+
+}
+}
+
+h3.footer-block:before{
+  content: "";
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+  width: 70px;
+  height: 2px;
+  background-color:#9b9b9b;
+  @include max-screen(375px){
+    margin-bottom: 20px;
+  }
+}
+.form-control{
+  font-family: 'Asap';
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #4d4d4d;
+  font-size: 16px;
+  border-radius: 0;
+  padding: 23px 12px;
+}
+textarea.form-control{
+  height: 200px;
+  resize: none;
+}
+button.btn.btn-default{
+  font-family: 'Asap';
+  font-weight: 500;
+  text-transform: uppercase;
+  color:#4d4d4d;
+  font-size: 16px;
+  border-radius: 0;
+  margin: 15px 0 50px;
+  background-color: white;
+
+}
+.btn{
+  padding: 15px 30px;
+  line-height: 1;
+}
+.social a{
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  padding: 5px 5px;
+  margin: 0 3px;
+  color: #4d4d4d;
+}
+.social:before{
+  content: "";
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 1170px;
+  height: 2px;
+  background-color:#9b9b9b;}
+.social{
+  max-width: 1170px;
+  margin: auto;
+  padding-bottom: 30px;
+}
+a.facebook{
+  padding:5px 7px ;
+}
+a.twitter{
+  background-color: #2e6da4;
+  color: white;
+}
+.social p{
+  display: inline-block;
+  color: white;
+  font-size: 16px;
+  text-transform: capitalize;
+  padding-left: 270px;
+  @include max-screen(375px){
+    display: block ;
+    padding: 10px 3px;
+    font-size: 10px;
+  }
+
+}
+a.back{
+border-radius: 0;
+  width: 40px;
+  height: 40px;
+}
